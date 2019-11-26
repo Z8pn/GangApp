@@ -7,8 +7,8 @@ var iziToast = require('./iziToast.min.js');
 var request = require('request');
 var Store = require('electron-store');
 var user_storage = new Store();
-var socketAddress = "ws://www.z8pn.com:7464";
-var restAddress = "www.z8pn.com:7464"
+var socketAddress = "ws://localhost:7464";
+var restAddress = "localhost:7464"
 /*
 var socketAddress = "ws://www.z8pn.com:7463";
 var restAddress = "www.z8pn.com:7463"*/
