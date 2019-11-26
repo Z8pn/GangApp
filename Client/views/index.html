@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Aktions Tracker [Logged Out]</title>
+    <link type="text/css" rel="stylesheet" href="css/font_awesome.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="css/iziToast.min.css">
+
+
+  </head>
+  <body>
+        <script>
+      // You can also require other files to run in this process
+      require('./js/renderer.js')
+    </script>
+    	<div class="type_browser" id="create_groups" style="display:none">
+            <div id="groups" class="types" >
+        		<div class="type"><img src="https://i.imgur.com/Op9DQCm.png"></img><span class="name">Fleeca Bank</span></div>
+        		<div class="type"><img src="https://i.imgur.com/OQSyMRM.jpg"></img><span class="name">Gangshop</span></div>
+        		<div class="type"><img src="https://i.imgur.com/nOky422.png"></img><span class="name">Gangwar</span></div>
+        		<div class="type"><img src="https://i.imgur.com/Op9DQCm.png"></img><span class="name">Gr. Waffentruck</span></div>
+            </div>
+    	</div>
+        <div class="type_browser" id="create_types" style="display:none">
+            <div id="types" class="types" >
+                <div class="type"><img src="https://i.imgur.com/Op9DQCm.png"></img><span class="name">Fleeca Bank</span></div>
+                <div class="type"><img src="https://i.imgur.com/OQSyMRM.jpg"></img><span class="name">Gangshop</span></div>
+                <div class="type"><img src="https://i.imgur.com/nOky422.png"></img><span class="name">Gangwar</span></div>
+                <div class="type"><img src="https://i.imgur.com/Op9DQCm.png"></img><span class="name">Gr. Waffentruck</span></div>
+            </div>
+        </div>
+
+    	<div id="context">
+    	</div>
+        <div id="player_list_context"  style="display:none">
+        </div>
+        <div id="signin" style="display:none">
+            <span class="headline" >Login</span>
+
+            <div class="row" id="alert" style="display:none">
+                <div class="col s10 push-s1 red" id="alert_text">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <input placeholder="Username" id="join_username" type="text" class="input-field col s10 push-s1 validate">
+                <label for="join_username">Username</label>
+            </div>
+            <div class="row">
+                <input minlength="3" placeholder="Password" id="join_password" type="password" class="input-field col s10 push-s1 validate">
+                <label for="join_password">Password</label>
+            </div>
+            <div class="row">
+                <div class="col s10 push-s1">
+                  <button id="singin_button" class="col s8 push-s2 btn waves-effect waves-light green">Login</button>
+                </div>
+            </div>
+        </div>
+        <div id="lobby" style="display:none">
+        	<div class="lobbies" id="lobby_list">
+        		<div class="lobby_group new">
+        			<div class="plus">
+        				<i class="fas fa-plus"></i>
+        			</div>
+        		</div>
+        	</div>
+
+        </div>
+
+
+
+        <div id="loggedin_users">
+        	<span id="userCount"></span>  <span id="latency"></span>
+        </div>
+  </body>
+</html>
